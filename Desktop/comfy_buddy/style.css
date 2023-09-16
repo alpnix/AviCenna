@@ -1,0 +1,212 @@
+:root {
+    --gap: 1rem;
+}
+
+
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1200;
+    margin: 0 auto;
+}
+
+.max-width{
+    max-width: 1200px;
+}
+
+.primary-navigation{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    background-color: hsl(0 0% 0% / 0.75);
+}
+
+.primary-navigation  a {
+    text-decoration: none;
+    color: white;
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: rgb(7, 124, 122);
+    font-size: 1.5rem;
+}
+
+@supports (backdrop-filter: blur(1em)) {
+    .primary-navigation {
+        background-color: hsl(0 0% 100% / 0.2);
+        backdrop-filter: blur(1em);
+    }
+}
+
+
+.primary-navigation a > span [aria-hidden="true"] {
+    font-weight: 700;
+    margin-inline-end: .5em;
+}
+
+.logo {
+    margin: 2rem;
+}
+
+.flex{
+    display: flex;
+    gap: var(--gap, 5rem);
+}
+
+.section {
+    padding: 1.5rem 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+
+.chatbot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 4px;
+    font-size: 1.5rem;
+    min-width: 12rem;
+    max-width: 45rem;
+    margin: 0 auto;
+}
+
+.chatbot__message--user{
+    background-color: #45a049;
+    color: white;
+    display: inline-block;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.chatbot__message--bot{
+    background-color: #f1f1f1;
+    color: black;
+    display: inline-block;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+
+.user_input {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+    width: 91%;
+    margin-left: 1px;
+    height: 4rem;
+    font-size: 1.7rem;
+}
+
+.user_input::placeholder {
+    color: #ccc;
+    font-size: 1.7rem;
+    padding: 0;
+}
+
+.send_btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: .4rem;
+    width: 7rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin: 0 auto;
+    padding: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    bottom: 6.5rem;
+    width: 80vw;
+    max-width: fit-content;
+    min-width: 12rem;
+    max-width: 45rem;
+}
+
+
+
+.send_btn:hover {
+    background-color: #74d779;
+}
+
+footer {
+    z-index: -10;
+    text-align: center;
+    bottom: 0;
+    height: 4rem;
+    margin: 0;
+    position: relative;
+    top: 20vh;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16%;
+    border-top: 1px solid rgba(168, 153, 153, 0.398);
+}
+
+
+input {
+    font-size: 2.3rem;
+    width: 100%;
+}
+
+.menu > svg {
+    fill: white;
+}
+
+
+@media (max-width: 35em) {
+    .primary-navigation {
+        position: fixed;
+        inset: 0 0 0 30%;
+        background: #4CAF50;
+        flex-direction: column;
+
+        padding: min(30vh, 10rem) 2em;
+
+        background-color: hsl(0 0% 100% / 0.2);
+        backdrop-filter: blur(1em);
+
+        
+        --gap: 2em;
+
+        flex-direction: column;
+        padding: min(30vh, 10rem) 2em;
+    }
+
+    .primary-navigation a {
+        color: rgb(7, 124, 122);
+        font-weight: 600;
+        font-size: 1.8rem;
+    }
+}

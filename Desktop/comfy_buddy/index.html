@@ -1,0 +1,84 @@
+<!-- generate a boilerplate -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <!-- link to css file -->
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;800;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="container">
+                <div class="header">
+                    <h3>
+                        Medical Chatbot
+                    </h3>
+                </div>
+    
+                <nav>
+                    <ul id="primary-navigation" class="primary-navigation flex"> 
+                        <li class="active">
+                            <a class="ff-sans-cond uppercase text-while letter-spacing-2" href="index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </header>
+
+        <section class="section max-width">
+            <div class="chatbot">
+                <div class="chatbot__message chatbot__message--user">
+                    <p>
+                        Hello, I am a chatbot. I can help you with your medical needs.
+                    </p>
+                </div>
+                <div id="bot_message" class="chatbot__message chatbot__message--bot">
+                    <p> 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Hello, I am a chatbot. I can help you with your medical needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <form class="action max-width">
+            <div>
+                <input id="user_message"  type="text" class="user_input" placeholder="Enter your message here..." />
+            </div>
+            <div>
+                <button type="submit" class="send_btn" id="send_btn">
+                    Send
+                </button>
+            </div>
+        </section>
+
+        <footer>
+                <p>
+                    &copy; 2023 Medical Chatbot
+                </p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
