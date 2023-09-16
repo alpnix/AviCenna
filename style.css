@@ -1,0 +1,136 @@
+body {
+    font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.menu-unordered-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu-ordered-list {
+    float: right;
+    color: #ccc;
+    list-style-type: none;
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+.menu-ordered-list:hover {
+    color: #fff;
+}
+
+.section {
+    padding: 1.5rem 2rem;
+}
+
+.chatbot {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 4px;
+    margin: 1rem;
+    margin-right: 3rem;
+    position: fixed;
+    font-size: 3rem;
+}
+
+.chatbot__message--user{
+    background-color: #45a049;
+    color: white;
+    display: inline-block;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.chatbot__message--bot{
+    background-color: #f1f1f1;
+    color: black;
+    display: inline-block;
+    padding: 0 2rem 0 2rem;
+}
+
+
+
+.user_input {
+    padding: 1.5rem 1.5rem 1rem 1.5rem;    
+    height: 4.2rem;
+    margin-bottom: 5px;
+    width: 91%;
+    margin-left: 1px;
+    height: 7rem;
+}
+
+.user_input::placeholder {
+    color: #ccc;
+    font-size: 2.3rem;
+    padding: 0;
+}
+
+.send_btn{
+    background-color: #4CAF50;
+    color: white;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-left: .4rem;
+    width: 9rem;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    margin-top: 0;
+    padding-top: 0;
+    position: absolute;
+    bottom: 6.5rem;
+}
+
+
+
+.send_btn:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 3rem;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 3rem;
+}
