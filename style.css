@@ -170,7 +170,6 @@ footer {
     top: 20vh;
     width: 100%;
     margin: 0 auto;
-    padding-left: 16%;
     border-top: 1px solid rgba(168, 153, 153, 0.398);
 }
 
@@ -183,6 +182,24 @@ input {
 .menu > svg {
     fill: white;
 }
+
+
+.about_us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0 auto;
+    max-width: 30rem;
+}
+
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
 
 
 @media (max-width: 35em) {
