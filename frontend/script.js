@@ -78,8 +78,9 @@ async function respond(userMessage) {
             'Content-Type': 'application/json'
         },
         mode: "cors",
-        body: JSON.stringify({ input: userMessage})
+        body: JSON.stringify({ input: userMessage })
     });
+    console.log(res)
     // Ensure the response status is OK before attempting to parse it
     if (res.status === 200) {
         const data = await res.json(); // Parse the JSON response
